@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cover Letter</title>
+</head>
+<body>
+  <h1>Cover Letter for <%= job.title %></h1>
+  <pre><%= coverLetter %></pre>
+  <h2>Suggestions</h2>
+  <ul>
+    <% suggestions.forEach(skill => { %>
+      <li>Add skill: <%= skill %></li>
+    <% }) %>
+  </ul>
+  <a href="/applications">Back to Applications</a>
+</body>
+</html>
